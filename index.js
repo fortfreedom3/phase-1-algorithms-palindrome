@@ -1,9 +1,20 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let first = word.slice(0, 1);
+  let last = word.slice(-1);
+
+    if (first === last) {
+      return true;
+    }
+    return false;
 }
 
+// isPalindrome("racecar");
+isPalindrome("robot");
+
+
 /* 
-  Add your pseudocode here
+  check if the 0 char and -1 char are the same if so return true else return false 
+
 */
 
 /*
@@ -13,6 +24,7 @@ function isPalindrome(word) {
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
   // add your own custom tests in here
+
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
